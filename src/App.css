@@ -1,0 +1,669 @@
+.Container {
+  width: 100%;
+  height: auto;
+
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0%;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*------------------THE SERIN--------------------------*/
+.head {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+}
+
+.The {
+  position: absolute;
+  font-size: 40px;
+  left: 45%;
+  top: 4.5vh;
+  rotate: 270deg;
+}
+
+.Siren {
+  position: absolute;
+  font-size: 40px;
+  left: 50%;
+}
+
+.hamburgerbtn {
+  display: none;
+}
+
+.hambuger-title {
+  display: flex;
+}
+
+/*==============================NAVBAR==============================*/
+
+ul {
+  justify-content: space-around;
+  display: flex;
+  font-size: 25px;
+  font-weight: 450;
+  margin-top: 0px;
+}
+
+
+
+.active {
+  color: #928f8f;
+  border-bottom: 2px solid #928f8f;
+}
+
+
+hr {
+  width: 95%;
+  height: 1.5px;
+  background-color: #197373;
+}
+
+/*-----------------------------HOME PAGE--------------------------*/
+
+.MAIN-IMAGE {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  justify-content: space-around;
+  gap: 3vw;
+  margin-top: 3vh;
+  margin-left: 1.2em;
+}
+
+.aghori-img img {
+  height: 65vh;
+  width: 58vw;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 3px #197373;
+}
+
+.top-img {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 60vh;
+  width: 35vw;
+}
+
+.top-img img {
+  border-radius: 10px;
+  height: 31.5vh;
+  width: 32vw;
+  box-shadow: 1px 2px 2px 3px #197373;
+}
+
+
+/*------------the latest--------------------------------------*/
+.Latest-head {
+  text-align: left;
+  font-size: 50px;
+  width: auto;
+  color: black;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+
+.Latest-head:hover {
+  text-decoration: underline;
+  color: rgb(111, 111, 111);
+}
+
+.LatestDiv {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 100%;
+}
+
+.latestimage {
+  width: 25vw;
+  height: 36vh;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(5, 73, 73);
+}
+
+.Latest-txt-head {
+  font-size: 36px;
+}
+
+.Latest-txt {
+  font-size: 14px;
+  width: 29vw;
+}
+
+.HomeLatest {
+  text-align: center;
+}
+
+/*----------------------------LATEST ARTICLE SECTION-------------------*/
+
+.Article-head {
+  font-size: 3rem;
+  text-align: left;
+  color: rgb(58, 55, 55);
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.Article-head:hover {
+  color: #02293b;
+}
+
+.ArticleContainer {
+  height: 300vh;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  justify-content: space-evenly;
+}
+
+.secondcolum {
+  display: flex;
+  flex-direction: column;
+  height: 295vh;
+  width: 50vw;
+  gap: 5vh;
+}
+
+.Article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 3px 3px #197373;
+  height: 34vh;
+  width: 45vw;
+}
+
+
+.Articleimages {
+  height: 33.2vh;
+  width: 20vw;
+  box-shadow: 1px 1px 3px 1.5px #d87093;
+}
+
+.Articletext {
+  text-align: center;
+  font-size: 15px;
+  width: 25vw;
+  height: 33vh;
+}
+
+
+
+.largeimg {
+  height: 50vh;
+  width: 45vw;
+  box-shadow: 1px 2px 2px 3px #197373;
+  border-radius: 5px;
+}
+
+/*-----------advertisment coulmn-----------------*/
+
+.thirdcolumn {
+  height: 295vh;
+  width: 44vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Advertisement {
+  width: 98%;
+  height: 115vh;
+  text-align: center;
+  color: rgb(185, 177, 177);
+  border: 3px solid #197373;
+  box-shadow: 1px 1px 3px 2px #197373;
+}
+
+.Advertisement h1 {
+  font-size: 3vw;
+  margin-top: 50%;
+}
+
+/*----------------TOP POST------------------------*/
+
+.Toppost {
+  height: 175vh;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.Toppost h1 {
+  font-size: 42px;
+  color: #212020;
+  margin-left: 0.5em;
+}
+
+.toparticle {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 33.5vh;
+  box-shadow: 1px 1px 3px 1px #d87093;
+}
+
+.TopArticleimg {
+  height: 33vh;
+  width: 20vw;
+  box-shadow: 1px 2px 3px 1px #197373;
+}
+
+
+.textt {
+  font-size: 14px;
+  width: 14vw;
+  /* margin-left: 2em; */
+}
+
+
+/*-------------------latest stories---------------*/
+
+
+.Storiehead {
+  text-align: left;
+  font-size: 50px;
+  margin-top: -1em;
+  margin-left: 0.5em;
+}
+
+.StoriesDiv {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  width: 100%;
+}
+
+.last {
+  font-size: 16px;
+}
+
+.last p {
+  width: 25vw;
+  font-size: 14px;
+}
+
+
+/*---------------------FOOTER DESIGN--------------------*/
+
+
+.footerContainer {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 0;
+  color: white;
+  background-color: #197373;
+  position: absolute;
+  padding: 50px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer2ndDiv {
+  display: flex;
+  gap: 8em;
+}
+
+.navcontact {
+  margin-top: 40px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.a {
+  color: white;
+  font-size: 15px;
+  line-height: 1%;
+}
+
+.navSocialmedia {
+  display: flex;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+
+.navsicon {
+  height: 6vh;
+  width: 3vw;
+  background-color: #197373;
+  border-radius: 50%;
+}
+
+.degineby {
+  font-size: 15px;
+}
+
+.aboutuss {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+
+/*------------BOLLYWOOD ----------------------============*/
+
+.headingcompo {
+  text-align: left;
+  font-size: 50px;
+  margin-left: 1em;
+}
+
+.headingcompo:hover {
+  color: #969292;
+}
+
+
+.maindiv {
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Imagemain {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  height: 515vh;
+  width: 52vw;
+
+}
+
+.Container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 3px 2px #197373;
+  height: 30vh;
+  width: 45vw;
+}
+
+.AllImages {
+  box-shadow: 1px 1px 3px 1px #d87093;
+  height: 29.2vh;
+  width: 24vw;
+}
+
+.AllText {
+  width: 20vw;
+  font-size: 1.2vw;
+
+}
+
+/*--------------------Top main2 RIGHT---------------*/
+
+.TopMain2 {
+  width: 41vw;
+  height: 515vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.ArticleAllOne {
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  gap: 2vh;
+}
+
+.Top {
+  font-size: 46px;
+  color: #525151;
+  text-align: center;
+}
+
+.singleImageForAll {
+  height: 50vh;
+  width: 96%;
+  box-shadow: 2px 2px 3px 2px #197373;
+}
+
+.Top2Text {
+  width: 30vw;
+  height: 20vh;
+}
+
+.ArticletextAllone1 {
+  height: 19vh;
+  width: 41vw;
+  font-size: 14px;
+  display: flex;
+  gap: 2vw;
+}
+
+.bigno {
+  font-size: 46px;
+}
+
+/*-----TOP2 KI SERIES-------------*/
+
+.toppostdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  height: 23vh;
+  width: 41vw;
+}
+
+.Top2series {
+  box-shadow: 2px 2px 3px 2px #d87093;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 40vw;
+  gap: 2vw;
+}
+
+.topsmallimg {
+  height: 20vh;
+  width: 16vw;
+}
+
+.number {
+  font-size: 1em;
+}
+
+.Top2Text {
+  width: 16vw;
+  font-size: 11px;
+}
+
+
+.Advertise {
+  box-shadow: 2px 2px 3px 2px #197373;
+  height: 212vh;
+  width: 40vw;
+  color: rgb(87, 86, 86);
+  margin-top: 20%;
+}
+
+.Advertise h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 90%;
+}
+
+
+/*===========================Dynamic PAGE DESIGNE==============*/
+
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.detail h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #02293b;
+}
+
+.detail h1:hover {
+  color: #928f8f;
+}
+
+.rightDetails {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  color: rgb(85, 83, 83);
+}
+
+.socialProfile {
+  display: flex;
+  flex-direction: row;
+}
+
+.Profile {
+  display: flex;
+  width: 30vw;
+  height: 15vh;
+  align-items: center;
+}
+
+.pic {
+  height: 9vh;
+  width: 4.5vw;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+.dates {
+  font-size: 12px;
+  color: rgb(108, 105, 105);
+}
+
+.userProfile {
+  display: flex;
+  width: 30vw;
+  height: 15vh;
+  align-items: center;
+}
+
+.userpic {
+  height: 5.2vh;
+  width: 5vh;
+  margin-left: 2em;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+.datess {
+  font-size: 10px;
+  color: rgb(108, 105, 105);
+}
+
+
+.ParentTop {
+  display: flex;
+}
+
+.share {
+  position: fixed;
+  margin-top: 15em;
+  margin-left: 10em;
+  z-index: -1;
+}
+
+.share2 {
+  display: flex;
+  height: 4.5vh;
+  gap: 0.6em;
+
+}
+
+.zindex {
+  z-index: 0;
+  background-color: #f1ecec;
+}
+
+.share3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.likeandshare3 {
+  font-size: 18px;
+}
+
+.likeshare {
+  width: 5vh;
+}
+
+.likeandshare {
+  font-size: 15px;
+  margin-left: 1em;
+}
+
+.sicon {
+  height: 6.5vh;
+  width: 3.2vw;
+  border-radius: 50%;
+}
+
+.NavigateImg {
+  height: 54vh;
+  width: 48vw;
+  box-shadow: 4px 4px 4px 4px #bab8b8;
+  border-radius: 5%;
+}
+
+.NavigateImg:hover {
+  box-shadow: 4px 4px 4px 4px #3d5145;
+}
+
+.btn {
+  height: 10vh;
+  text-align: center;
+}
+
+.backbutton {
+  background-color: #161616;
+  color: white;
+  width: 20vw;
+  height: 8vh;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+.navitext {
+  color: #081d1f;
+  font-size: 20px;
+  text-align: center;
+}
