@@ -1,21 +1,37 @@
 import React, { useContext } from "react";
 import { useParams, NavLink, useNavigate } from "react-router-dom";
 import { Store } from "../Store/DataStore";
-// import useApi from "../customHook/useApi";
+import useApi from "../customHook/useApi";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Navigate = () => {
     const [newitem] = useContext(Store);
-    // const {data} = useApi();
+    const { data } = useApi();
+    console.log(data, "datattaa");
+    const [datas, setData] = useState([])
     const { id } = useParams();
     const itemId = parseInt(id);
     const navii = useNavigate()
+    console.log(itemId, "item ");
     const selectedItem = newitem.find((item) => item.id === itemId);
+    console.log(selectedItem, "selcted item");
     const categorynew = selectedItem ? selectedItem.category : "";
+
+    useEffect(() => {
+        axios.get("https://ecombackend-aiqz.onrender.com/api/getdata")
+            .then((res) => setData(res.data))
+            .catch((err) => {
+                console.log("error")
+            })
+    }, [id])
+
+
     const relatedItems = newitem.filter(
-            (item) =>
-                item.category === categorynew &&
-                (item.id % 5 === 3|| item.id % 3 === 1 || item.id % 3 === 0)
-        )
+        (item) =>
+            item.category === categorynew &&
+            (item.id % 5 === 3 || item.id % 3 === 1 || item.id % 3 === 0)
+    )
         .slice(1, 4);
     console.log(categorynew);
 
@@ -28,6 +44,7 @@ const Navigate = () => {
                 </div>
                 <div className="detail">
                     <h1>{selectedItem.name}</h1>
+                    {console.log(selectedItem.name)};
                     <div className="socialProfile">
                         <div className="Profile">
                             <img src="https://toppng.com/uploads/preview/man-icon-icon-11553432006itw46zhhk8.png" className="pic"
